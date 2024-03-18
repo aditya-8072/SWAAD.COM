@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+   <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <script>
+    function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (name == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+
+        if (email == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+
+        if (!isValidEmail(email)) {
+            alert("Invalid email address");
+            return false;
+        }
+
+        if (password == "") {
+            alert("Password must be filled out");
+            return false;
+        }
+        if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+
+        return true;
+    }
+
+    function isValidEmail(email) {
+        // Very basic email validation, you can enhance it according to your requirements
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form id="myForm" onsubmit="return validateForm()" >
+                <div class="input-group">
+                    <div class="input-field"id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"id="name"placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email"id="email"placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"id="password"placeholder="Passsword">
+                    </div>
+                    <p>Forgot password ? <a href="#"> Click Here! </a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="submit"id="signupBtn"><a href="#" class="signup">Sign up</a></button>
+                    <button type="submit"id="signinBtn" class="disable"><a href="#"class="signin">Sign in</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signupBtn=document.getElementById("signupBtn");
+        let signinBtn=document.getElementById("signinBtn");
+        let nameField=document.getElementById("nameField");
+        let title=document.getElementById("title");
+
+        signinBtn.onclick=function(){
+            nameField.style.maxHeight="0";
+            title.innerHTML="Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick=function(){
+            nameField.style.maxHeight="60px";
+            title.innerHTML="Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+        
+        
+
+    </script>
+</body>
+</html>

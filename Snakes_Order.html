@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SWAAD</title>
+<link rel="stylesheet" href="order.css">
+<style>
+    .order23{
+        height: 100px;
+        width: 100px;
+        text-align:left;
+        flex-direction: column;
+        
+    }
+    .swad
+    {
+        text-align: center;
+       margin-bottom: 60px;
+       flex-direction: column;
+    }
+    .swaad
+    {
+        color: brown;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1 class="swad"><a href="project1.html"><img src="Logo12.png"class="order23" alt=""></a>
+        
+        
+        <br><br> <a href="project1.html"class="swaad">SWAAD</a></h1>
+  </header>
+  <main>
+    <form id="order-form">
+      <label for="item">Select Item:</label>
+      <select id="item" name="item">
+        <option value="Onion Pakoda">Onion Pakoda - $0.6</option>
+        <option value="Aaloo Pakoda">Aaloo Pakoda - $1.00</option>
+        <option value="Chilli Pakoda">Chilli Pakoda- $2.00</option>
+        <option value="Bread Pakoda">Bread Pakoda - $1.5</option>  
+        <option value="Samosa">Samosa - $1.00</option> 
+         <option value="Kachori">Kachori - $1.00</option>
+         <option value="Dhokla">Dhokla - $1.00</option>
+         <option value="Baby Corn Manchurian">Baby Corn Manchurian - $0.4</option>
+         <option value="Chana Dal Vada">Chana Dal Vada - $0.4</option>
+         <option value="Honey Chilly Potato">Honey Chilly Potato - $1.25</option>
+         <option value="Spring Rolls">Spring Rolls - $1.25</option>
+         <option value="Gobi Manchurian">Gobi Manchurian - $1.25</option>
+        
+      </select>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      <button type="button" onclick="addToCart()">Add to Cart</button>
+    </form>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items">
+      </ul>
+      <p>Total: <span id="total">$0.00</span></p>
+      <button type="button" onclick="checkout()">Place Order</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Food Delivery</p>
+  </footer>
+  <script src="Snakes_order.js"></script>
+</body>
+</html>

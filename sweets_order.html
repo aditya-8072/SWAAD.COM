@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Delivery Order Page</title>
+<link rel="stylesheet" href="order.css"><style>
+    .order23{
+        height: 100px;
+        width: 100px;
+        text-align:left;
+        flex-direction: column;
+        
+    }
+    .swad
+    {
+        text-align: center;
+       margin-bottom: 60px;
+       flex-direction: column;
+    }
+    .swaad
+    {
+        color: brown;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1 class="swad"><a href="project1.html"><img src="Logo12.png"class="order23" alt=""></a>
+        
+        
+        <br><br> <a href="project1.html"class="swaad">SWAAD</a></h1>
+  </header>
+  <main>
+    <form id="order-form">
+      <label for="item">Select Item:</label>
+      <select id="item" name="item">
+        <option value="Chocolate Cupcakes">Chocolate Cupcakes - $1.00</option>
+        <option value="Choco Chip Cookies">Choco Chip Cookies - $0.5</option>
+        <option value="Rasgulla">Rasgulla - $0.45</option>
+        <option value="Gulab Jamun">Gulab Jamun - $0.4</option>  
+        <option value="Mysore Pak ">Mysore Pak - $0.6</option> 
+         <option value="Boondi Laddoo">Boondi Laddoo - $0.5</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      <button type="button" onclick="addToCart()">Add to Cart</button>
+    </form>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items">
+      </ul>
+      <p>Total: <span id="total">$0.00</span></p>
+      <button type="button" onclick="checkout()">Place Order</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Food Delivery</p>
+  </footer>
+  <script src="sweets_order.js"></script>
+</body>
+</html>

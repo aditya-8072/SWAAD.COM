@@ -1,0 +1,101 @@
+.footer_container{
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.copyright {
+    color: #94969f;
+    text-align: end;
+    padding: 15px;
+}
+.playstore{
+    height: 23px;
+    width: 80px;
+}
+.playstore :hover{
+    height: 33px;
+    width: 90px;
+}
+.appstore{
+    height: 23px;
+    width: 100px;
+}
+
+
+.play{
+    height: 45px;
+    width: 120px;
+}
+.app{
+    height:45px;
+    width: 120px;
+}
+.register{
+    text-align: center;
+    line-height: inherit;
+    font-size: 40px;
+    word-spacing: 0cqi;
+     margin-top: 40px;
+     padding-bottom: 40px;
+     padding-top: 40px;
+     margin-top: 40px;
+
+}
+.icons{
+    align-items: center;
+    text-align: center;
+    
+     justify-content: space-between;
+     margin-top: 40px;
+     margin-bottom: 40px;
+
+}
+.copyright{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+
+}
+.profile{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    
+}
+.cont{
+   
+    text-decoration: underline;
+}
+.polic{
+   
+    text-decoration: underline;
+}
+.exp{
+   
+    text-decoration: underline;
+}
+.keep{
+   
+    text-decoration: underline;
+}
+.logo982{
+    height: 95px;
+    width: 95px;
+}

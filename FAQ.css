@@ -1,0 +1,82 @@
+section{
+    /*background-image: url('faq1.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*font-weight: 1000;*/
+    opacity:1;
+    
+    text-align:justify;
+
+
+  
+
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: 900;
+    
+}
+.box{
+    border-style:ridge;
+border-width: 2px;
+border-color: cadetblue;
+background-color:aliceblue;
+padding-top: 3px;
+padding-bottom: 5px;
+justify-content: center;
+}
+.para{
+    background-color: white;
+    border-color: white;
+    border-width: 1px;
+
+
+}
+
+/*
+.summary{*/
+   /* color: rgba(52, 52, 187, 0);*/
+  /*  font-size: 45px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+
+    
+}
+.p{
+    font-weight: 500;
+}*/
+/*.sum{
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+}*/
+/*.para{
+    font-size: 20px;
+}
+.para1{
+    font-size: 30px;
+}
+*/
+/*.faq1{
+    border-style: solid;
+    border-color: cadetblue;
+    background-color:aliceblue;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    justify-content: center;
+}*/
+/*.ans1{
+    border-style:ridge;
+    border-width: 2px;
+    border-color: cadetblue;
+    background-color:aliceblue;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    justify-content: center;
+}*/
+.fot{
+    background-color: brown;
+}
